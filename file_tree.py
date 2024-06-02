@@ -20,7 +20,7 @@ def generate_file_tree(directory, padding=''):
     return tree
 
 # Example usage
-directory_path = r'D:\Media_download\[DBD-Raws][孤独摇滚！][01-12TV全集+特典映像][1080P][BDRip][HEVC-10bit][简繁外挂][FLAC][MKV]'
+directory_path = r'D:\TV\Anime\完结动漫\孤独摇滚（2020）1\Fonts\fonts'
 file_tree = generate_file_tree(directory_path)
 last_level_directory = os.path.basename(directory_path)
 print(f"输出的file tree包含{last_level_directory}的最后一级目录和其下的结构")
