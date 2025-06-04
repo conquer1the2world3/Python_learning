@@ -18,10 +18,9 @@ def generate_file_tree(directory, padding=''):
             else:
                 tree += '{}├── {}\n'.format(padding, item)
     return tree
-
 # Example usage
-directory_path = r'D:\TV\Anime\完结动漫\孤独摇滚（2020）1\Fonts\fonts'
+directory_path = r'D:\Radio\BBC Radio'
 file_tree = generate_file_tree(directory_path)
-last_level_directory = os.path.basename(directory_path)
-print(f"输出的file tree包含{last_level_directory}的最后一级目录和其下的结构")
-print(last_level_directory + '\n' + file_tree)
+abs_directory = os.path.abspath(directory_path)
+print(f"输出的file tree包含{abs_directory}的最后一级目录和其下的结构")
+print(abs_directory + '\n' + file_tree)

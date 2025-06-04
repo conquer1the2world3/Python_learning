@@ -33,12 +33,12 @@ def create_hard_links(folder, new_folder):
             print(f"An error occurred: {str(e)}")
 
 # Usage example
-anime_name="孤独摇滚（2020）"
+anime_name="五等分的新娘＊ (2024)"
 # NASTools设置的二级目录
 category = ["动漫" , "完结动漫"]
 # suffix = "CDs"
 anime_dir = f"D:\TV\Anime\{category[1]}\{anime_name}"
 # os.mkdir(anime_dir)
-source_folder = r'D:\Media_download\[DBD-Raws][孤独摇滚！][01-12TV全集+特典映像][1080P][BDRip][HEVC-10bit][简繁外挂][FLAC][MKV]\Fonts'
+source_folder = r'D:\Media_download\[Sakurato] Go-Toubun no Hanayome ＊'
 new_folder = rf'{anime_dir}'
 create_hard_links(source_folder, new_folder)
