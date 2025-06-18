@@ -1,0 +1,18 @@
+class Test:
+    def prt(self):
+        print(self)
+        print(self.__class__)
+
+    def __del__(self):
+        print("对象被删除")
+
+t1 = Test()
+t2 = t1
+t3 = t1
+print(id(t1),id(t2),id(t3))
+
+del t1
+del t2
+del t3
+
+
